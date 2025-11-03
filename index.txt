@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Everett Helm
+Everett Helm
 Web developer
 
 Show Contacts
 
 Email
-richard@example.com
+Helm.110@osu.edu
 
 Phone
-+1 (213) 352-2795
++1 (614) 947-2242
 
 Birthday
-June 23, 1982
+September 28, 2005
 
 Location
-Sacramento, California, USA
+Columbus, Ohio, USA
 
 # navbar
 
@@ -32,10 +32,9 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+I'm an aspiring researcher at Ohio State University, where I currently work on multiple projects under the wonderful direction of Dr. Kaeli Hughes. 
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
-
+My current interests are in astrophysics, where I work on antenna development for RNO-G in addition to studying the lunar surface. 
 
 ## service
 
