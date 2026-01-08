@@ -157,12 +157,12 @@ html { font-family: var(--ff-poppins); }
 
 body { 
   background: 
-    radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%),
-    radial-gradient(ellipse at center, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-  background-size: 100% 100%, 50% 80%, 30% 60%;
-  background-position: center bottom, 20% 30%, 80% 20%;
-  animation: galaxyMove 20s ease-in-out infinite alternate;
+    url('../images/galaxy-1704508388O9K.jpg'),
+    radial-gradient(ellipse at bottom, rgba(27, 39, 53, 0.8) 0%, rgba(9, 10, 15, 0.9) 100%);
+  background-size: cover, 100% 100%;
+  background-position: center center, center bottom;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat, no-repeat;
   position: relative;
   overflow-x: hidden;
 }
@@ -175,14 +175,16 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, white, transparent),
-    radial-gradient(2px 2px at 40px 70px, white, transparent),
-    radial-gradient(1px 1px at 90px 40px, white, transparent),
-    radial-gradient(1px 1px at 130px 80px, white, transparent),
-    radial-gradient(2px 2px at 160px 30px, white, transparent);
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(2px 2px at 160px 30px, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 200px 60px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(2px 2px at 250px 20px, rgba(255, 255, 255, 0.6), transparent);
   background-repeat: repeat;
-  background-size: 200px 100px;
-  animation: twinkle 3s linear infinite;
+  background-size: 300px 150px;
+  animation: twinkle 4s linear infinite;
   pointer-events: none;
   z-index: -1;
 }
@@ -206,6 +208,43 @@ body::before {
   50% {
     opacity: 1;
   }
+}
+
+/* General Scrollbar Styles for All Screen Sizes */
+body::-webkit-scrollbar { 
+  width: 20px; 
+}
+
+body::-webkit-scrollbar-track { 
+  background: linear-gradient(180deg, #1b2735 0%, #090a0f 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 5px solid transparent;
+  background: linear-gradient(45deg, rgba(120, 119, 198, 0.5), rgba(255, 255, 255, 0.2));
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.2),
+              inset -1px -1px 0 hsla(240, 100%, 80%, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:hover { 
+  background: linear-gradient(45deg, rgba(120, 119, 198, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+body::-webkit-scrollbar-button { 
+  height: 0px; 
+  display: none;
+}
+
+body::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Ensure full height scrollbar */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -1839,7 +1878,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     background: linear-gradient(45deg, rgba(120, 119, 198, 0.7), rgba(255, 255, 255, 0.3));
   }
 
-  body::-webkit-scrollbar-button { height: 60px; }
+  body::-webkit-scrollbar-button { 
+    height: 0px; 
+    display: none;
+  }
 
 
 
